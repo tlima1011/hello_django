@@ -12,13 +12,13 @@ def soma(request, num1, num2):
 
 def multi(request, num1, num2):
     m = num1 * num2
-    return HttpResponse('<h1>{}  +  {} = {}'.format(num1, num2, m))
+    return HttpResponse('<h1>{}  *  {} = {}'.format(num1, num2, m))
 
 
 def dividi(request, num1, num2):
     d = num1 / num2
-    return HttpResponse('<h1>{}  +  {} = {}'.format(num1, num2, d))
+    return HttpResponse('<h1>{}  /  {} = {}'.format(num1, num2, d))
 
 def subtracao(request, num1, num2):
     sub = num1 - num2
-    return HttpResponse('<h1>{}  +  {} = {}'.format(num1, num2, sub))
+    return HttpResponse('<h1>{}  -  {} = {}'.format(num1, num2, sub))
